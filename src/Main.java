@@ -22,7 +22,7 @@ public class Main {
                             inputTask(scanner);
                             break;
                         case 2:
-                            // todo: обрабатываем пункт меню 2
+                            Calendar.deleteTask(scanner);
                             break;
                         case 3:
                             getTasksForDay(scanner);
@@ -89,6 +89,7 @@ public class Main {
                 task = new OneTimeTask(title, description, isWork, date);
         }
         calendar.addTask(task);
+
     }
 
     public static void getTasksForDay(Scanner scanner) {
